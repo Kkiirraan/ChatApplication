@@ -111,7 +111,7 @@
         }
       }
     },
-    "/api/Auth/me": {
+    "/api/Auth/logintest": {
       "get": {
         "tags": [
           "Auth"

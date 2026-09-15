@@ -1,16 +1,9 @@
 <Solution>
   <Folder Name="/AuthenticationService/" />
-  <Folder Name="/AuthenticationService/src/" />
-  <Folder Name="/AuthenticationService/src/Api/">
+  <Folder Name="/AuthenticationService/src/">
     <Project Path="ChatApplication.AuthenticationService.Api/ChatApplication.AuthenticationService.Api.csproj" />
-  </Folder>
-  <Folder Name="/AuthenticationService/src/Application/">
     <Project Path="ChatApplication.AuthenticationService.Application/ChatApplication.AuthenticationService.Application.csproj" />
-  </Folder>
-  <Folder Name="/AuthenticationService/src/Domain/">
     <Project Path="ChatApplication.AuthenticationService.Domain/ChatApplication.AuthenticationService.Domain.csproj" />
-  </Folder>
-  <Folder Name="/AuthenticationService/src/Infrastructure/">
     <Project Path="ChatApplication.AuthenticationService.Infrastructure/ChatApplication.AuthenticationService.Infrastructure.csproj" />
   </Folder>
 </Solution>

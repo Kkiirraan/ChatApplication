@@ -28,7 +28,7 @@
   {
     "ContainingType": "ChatApplication.AuthenticationService.Api.Controllers.AuthController",
     "Method": "Me",
-    "RelativePath": "api/Auth/me",
+    "RelativePath": "api/Auth/logintest",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
