@@ -1,0 +1,286 @@
+{
+  "openapi": "3.1.1",
+  "info": {
+    "title": "ChatApplication.AuthenticationService.Api | v1",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://localhost:7015"
+    },
+    {
+      "url": "http://localhost:5268"
+    }
+  ],
+  "paths": {
+    "/api/Auth/register": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthResponseDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthResponseDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthResponseDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Auth/me": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AuthResponseDto": {
+        "required": [
+          "accessToken",
+          "expiresAtUtc",
+          "user"
+        ],
+        "type": "object",
+        "properties": {
+          "accessToken": {
+            "type": "string"
+          },
+          "expiresAtUtc": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "user": {
+            "$ref": "#/components/schemas/UserDto"
+          }
+        }
+      },
+      "LoginRequest": {
+        "required": [
+          "usernameOrEmail",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "usernameOrEmail": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+      "RegisterRequest": {
+        "required": [
+          "username",
+          "firstName",
+          "lastName",
+          "email",
+          "phoneCountryCode",
+          "phoneNumber",
+          "birthday",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "username": {
+            "maxLength": 50,
+            "minLength": 3,
+            "type": "string"
+          },
+          "firstName": {
+            "maxLength": 100,
+            "type": "string"
+          },
+          "lastName": {
+            "maxLength": 100,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 256,
+            "type": "string"
+          },
+          "phoneCountryCode": {
+            "pattern": "^\\+[1-9]\\d{0,3}$",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "pattern": "^\\d{4,14}$",
+            "type": "string"
+          },
+          "birthday": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date"
+          },
+          "password": {
+            "maxLength": 128,
+            "minLength": 8,
+            "type": "string"
+          }
+        }
+      },
+      "UserDto": {
+        "required": [
+          "id",
+          "username",
+          "fistName",
+          "lastName",
+          "email",
+          "isEmailVerified",
+          "phoneCountryCode",
+          "phoneNumber",
+          "isPhoneVerified",
+          "birthday",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "username": {
+            "type": "string"
+          },
+          "fistName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "isEmailVerified": {
+            "type": "boolean"
+          },
+          "phoneCountryCode": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "isPhoneVerified": {
+            "type": "boolean"
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date"
+          },
+          "status": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Auth"
+    }
+  ]
+}

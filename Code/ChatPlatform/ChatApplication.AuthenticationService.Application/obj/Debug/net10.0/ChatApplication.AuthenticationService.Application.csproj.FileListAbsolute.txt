@@ -1,0 +1,16 @@
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\bin\Debug\net10.0\ChatApplication.AuthenticationService.Application.deps.json
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\bin\Debug\net10.0\ChatApplication.AuthenticationService.Application.dll
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\bin\Debug\net10.0\ChatApplication.AuthenticationService.Application.pdb
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\obj\Debug\net10.0\ChatApplication.AuthenticationService.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\obj\Debug\net10.0\ChatApplication.AuthenticationService.Application.AssemblyInfoInputs.cache
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\obj\Debug\net10.0\ChatApplication.AuthenticationService.Application.AssemblyInfo.cs
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\obj\Debug\net10.0\ChatApplication.AuthenticationService.Application.csproj.CoreCompileInputs.cache
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\obj\Debug\net10.0\ChatApplication.AuthenticationService.Application.sourcelink.json
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\obj\Debug\net10.0\ChatApplication.AuthenticationService.Application.dll
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\obj\Debug\net10.0\refint\ChatApplication.AuthenticationService.Application.dll
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\obj\Debug\net10.0\ChatApplication.AuthenticationService.Application.pdb
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\obj\Debug\net10.0\ref\ChatApplication.AuthenticationService.Application.dll
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\bin\Debug\net10.0\ChatApplication.AuthenticationService.Domain.dll
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\bin\Debug\net10.0\ChatApplication.AuthenticationService.Domain.pdb
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\obj\Debug\net10.0\ChatApplication.AuthenticationService.Application.csproj.AssemblyReference.cache
+C:\Users\kiran\Programming\C#\ChatApplication\Code\ChatPlatform\ChatApplication.AuthenticationService.Application\obj\Debug\net10.0\ChatAppl.6E729ABF.Up2Date
